@@ -144,8 +144,6 @@ int main() {
     // to work best for this purpose
     NeuralNet network(5, 0.000001);
 
-    std::vector<float> test_values{0.2, 0.3, 0.4, -0.2, 0.3};
-
     std::cout << "Mean error before training: " << network.mean_error()
         << std::endl;
     network.train(10000000);
